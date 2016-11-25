@@ -23,5 +23,11 @@ public class Man {
     public String toString(){
         return Name+" "+secondName+" "+Age;
     }
-
+void setFullName(String n,String sn){
+    Name=n;
+    secondName=sn;
+}
+void setName(String n) {
+    Name = n;
+}
 }
