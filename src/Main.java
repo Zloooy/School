@@ -13,6 +13,10 @@ public class Main {
         System.out.println(getAverageAge(new Man[]{st,pl}));
         Admin ad=new Admin("Авессалом","Изнурёнкин",40,new Teacher[]{pl},new Schooler[]{st});
         System.out.println(ad);
+        ad.addTeacher(pl);
+        ad.addSchooler(st);
+        ad.addLessonToAllTeachers(new Lesson("Физика",66));
+        System.out.println(ad);
     }
     static int getAverageAge(Man[] Men){
         int sum=0;

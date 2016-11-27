@@ -3,9 +3,11 @@
  */
 public class Teacher extends Man {
     Lesson[] Lessons;
+    int lessonCnt;
     Teacher(){
         super();
        Lesson[] Lessons={};
+        lessonCnt=0;
     }
     Teacher(String nm,String snm,int ag, Lesson[] les){
         super(nm,snm,ag);
@@ -15,6 +17,7 @@ public class Teacher extends Man {
             Lessons[n]=new Lesson(l.Lesson_name,l.Lesson_date);
             n++;
         }
+        lessonCnt=Lessons.length;
     }
     public String toString(){
         String res=super.getName();
