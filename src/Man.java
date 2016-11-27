@@ -20,8 +20,14 @@ public class Man {
     String getName(){
         return Name;
     }
+    String getFullName(){
+        return Name+" "+secondName;
+    }
     public String toString(){
         return Name+" "+secondName+" "+Age;
+    }
+    String[] getStringParams(){
+        return new String[]{Name,secondName};
     }
 void setFullName(String n,String sn){
     Name=n;

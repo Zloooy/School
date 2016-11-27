@@ -8,4 +8,7 @@ public class Lesson {
         Lesson_name=name;
         Lesson_date=date;
     }
+    public String toString(){
+        return Lesson_date+"\t"+Lesson_name;
+    }
 }

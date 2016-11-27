@@ -1,10 +1,15 @@
 /**
  * Created by student1 on 21.11.16.
  */
-public class Student extends Man {
+public class Schooler extends Man {
     Mark[] Marks;
     int markCnt;
-    Student(String nm,String snm,int ag, Mark[] mar){
+    Schooler(){
+        super();
+        markCnt=0;
+        Marks=new Mark[]{};
+    }
+    Schooler(String nm, String snm, int ag, Mark[] mar){
         super(nm,snm,ag);
         markCnt=mar.length;
         Marks=new Mark[markCnt];
